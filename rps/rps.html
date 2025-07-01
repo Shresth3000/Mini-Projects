@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RPS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header id="heading">Rock-Paper-Scissors</header>
+
+  <div class="parent">
+    <div id="rock" class="options"><img src="rock.png" alt="Rock" /></div>
+    <div id="paper" class="options"><img src="paper.png" alt="Paper" /></div>
+    <div id="scissors" class="options"><img src="scissors.png" alt="Scissors" /></div>
+  </div>
+
+  <div class="score-board">
+    <div class="score">
+      <p id="you">0</p>
+      <p class="modechange">You</p>
+    </div>
+    <div class="score">
+      <p id="comp">0</p>
+      <p class="modechange">Comp</p>
+    </div>
+  </div>
+
+  <div class="msg-container">
+    <p id="msg">Play Your Move</p>
+  </div>
+  <button class="reset">Reset</button>
+
+  <div class="theme">
+    <div id="themeButton">
+      <img id="themeIcon" src="sun.png" alt="Theme" />
+    </div>
+  </div>
+  <div class="history-panel">
+  <h3>Game History</h3>
+  <ul id="historyList"></ul>
+</div>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>

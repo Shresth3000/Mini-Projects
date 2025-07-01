@@ -1,0 +1,47 @@
+.heading{
+    background-color: rgb(29, 31, 57);
+    width: 100vw;
+    height: 4rem;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 120px;
+    transition: all ease 0.5s;
+    text-decoration: underline  rgb(29, 31, 57);
+    text-underline-offset: 5px;
+
+}
+.heading:hover{
+    letter-spacing: 10px;
+   text-decoration: underline  rgb(60, 60, 62);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+#name{
+    text-decoration: none;
+    display: inline;
+    background-color: rgb(69, 65, 85);
+    padding: 10px;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+body{
+    background-color: black;
+}
+a{
+    transition: all ease 50ms;
+    display: flex;
+    width: 150px;
+    text-align: center;
+    
+}
+a:hover{
+scale: 120%;
+}
