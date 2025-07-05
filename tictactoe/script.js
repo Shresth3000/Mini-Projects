@@ -48,3 +48,26 @@ reset.addEventListener("click", () => {
   currentPlayer = "X";
   rTxt.innerText = "New Game Started!";
 });
+let mode = "light";
+
+const circle = document.getElementById("themeButton");
+const themeIcon = document.getElementById("themeIcon");
+const bgCircle = document.querySelector(".theme");
+const bdy = document.querySelector("body");
+circle.addEventListener("click", () => {
+  if (mode === "light") {
+    circle.style.transform = "translateX(116px) rotate(360deg)";
+    themeIcon.src = "images.png";
+    circle.style.backgroundColor = "black";
+    bgCircle.style.backgroundColor = "azure";
+    bdy.style.backgroundColor = "black";
+    mode = "dark";
+  } else {
+    circle.style.transform = "translateX(0px) rotate(0deg)";
+    themeIcon.src = "sun.png";
+    circle.style.backgroundColor = "white";
+    bgCircle.style.backgroundColor = "black";
+    bdy.style.backgroundColor = "white";
+    mode = "light";
+  }
+});
