@@ -54,6 +54,8 @@ const circle = document.getElementById("themeButton");
 const themeIcon = document.getElementById("themeIcon");
 const bgCircle = document.querySelector(".theme");
 const bdy = document.querySelector("body");
+const mainContainer = document.querySelector(".main-container");
+
 circle.addEventListener("click", () => {
   if (mode === "light") {
     circle.style.transform = "translateX(116px) rotate(360deg)";
@@ -62,6 +64,7 @@ circle.addEventListener("click", () => {
     bgCircle.style.backgroundColor = "azure";
     bdy.style.backgroundColor = "black";
     mode = "dark";
+    mainContainer.style.borderColor="white";
   } else {
     circle.style.transform = "translateX(0px) rotate(0deg)";
     themeIcon.src = "sun.png";
@@ -69,5 +72,6 @@ circle.addEventListener("click", () => {
     bgCircle.style.backgroundColor = "black";
     bdy.style.backgroundColor = "white";
     mode = "light";
+    mainContainer.style.borderColor="black";
   }
 });
